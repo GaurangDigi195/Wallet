@@ -12,7 +12,20 @@ import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 
 const MyWallet = ({ open, closeModal, amount, address }) => {
   return (
-    <Dialog open={open} onClose={closeModal} fullWidth>
+    <Dialog
+      open={open}
+      onClose={closeModal}
+      fullWidth
+      PaperProps={{
+        style: {
+          backgroundColor: "#2f4f4f",
+          boxShadow: "none",
+        },
+      }}
+      sx={{
+        backdropFilter: "blur(5px)",
+      }}
+    >
       <DialogTitle>
         <Box display="flex" justifyContent="space-between" alignItems="center">
           My Wallet
@@ -44,7 +57,9 @@ const MyWallet = ({ open, closeModal, amount, address }) => {
               <Typography variant="subtitle1">
                 <b>JumboChain Wallet</b>
               </Typography>
-              <Typography variant="subtitle2">{address}</Typography>
+              <Typography variant="subtitle2" sx={{ fontSize: "1rem" }}>
+                {address}
+              </Typography>
             </Box>
             <Box sx={{ position: "absolute", right: "10%" }}>
               <Typography variant="subtitle2">

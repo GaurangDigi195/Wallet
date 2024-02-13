@@ -3,18 +3,21 @@ import { Link } from "react-router-dom";
 
 const Onboard = () => {
   return (
-    <div>
-      <Typography color="common.white" align="center">
+    <div className="main">
+      <Typography variant="h5" color="common.white">
         Enter Solana with MetaMask Snap
       </Typography>
-      <Typography variant="subtitle2" align="center">
+      <Typography
+        variant="subtitle2"
+        sx={{ width: "100%", textAlign: "center" }}
+      >
         You're about to install Solana App
       </Typography>
       <Button
         variant="contained"
         color="success"
         size="medium"
-        sx={{ mx: "50%" }}
+        sx={{ width: "100%" }}
       >
         <Link to="/onbard2">Continue</Link>
       </Button>

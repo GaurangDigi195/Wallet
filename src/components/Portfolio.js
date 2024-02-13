@@ -160,6 +160,7 @@ const Portfolio = () => {
             <SendModal
               open={showModal2}
               closeModal={() => setShowModal2(false)}
+              address={code}
             />
           )}
         </Box>

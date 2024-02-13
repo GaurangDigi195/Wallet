@@ -31,7 +31,20 @@ const RecieveModal = ({ open, closeModal, address }) => {
   };
 
   return (
-    <Dialog open={open} onClose={closeModal} fullWidth>
+    <Dialog
+      open={open}
+      onClose={closeModal}
+      fullWidth
+      PaperProps={{
+        style: {
+          backgroundColor: "#2f4f4f",
+          boxShadow: "none",
+        },
+      }}
+      sx={{
+        backdropFilter: "blur(5px)",
+      }}
+    >
       <DialogTitle>
         <Box display="flex" justifyContent="space-between" alignItems="center">
           Receive JumboCoin
