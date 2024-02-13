@@ -13,14 +13,16 @@ const Onboard = () => {
       >
         You're about to install Solana App
       </Typography>
-      <Button
-        variant="contained"
-        color="success"
-        size="medium"
-        sx={{ width: "100%" }}
-      >
-        <Link to="/onbard2">Continue</Link>
-      </Button>
+      <Link to="/onbard2">
+        <Button
+          variant="contained"
+          color="success"
+          size="medium"
+          sx={{ width: "100%" }}
+        >
+          Continue
+        </Button>
+      </Link>
     </div>
   );
 };

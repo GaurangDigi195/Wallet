@@ -3,20 +3,22 @@ import { Link } from "react-router-dom";
 
 const Onboard2 = () => {
   return (
-    <div>
+    <div className="main">
       <Typography color="common.white" align="center">
         Solflare- Your Solana Companion
       </Typography>
       <Typography variant="subtitle2" align="center">
         Some Text
       </Typography>
-      <ButtonGroup sx={{ mx: "50%" }}>
-        <Button variant="outlined">
-          <Link to="/">Back</Link>
-        </Button>
-        <Button variant="contained">
-          <Link to="/finalonboard">Continue</Link>
-        </Button>
+      <ButtonGroup>
+        <Link to="/">
+          <Button variant="outlined" sx={{ mr: "1rem" }}>
+            Back
+          </Button>
+        </Link>
+        <Link to="/finalonboard">
+          <Button variant="contained">Continue</Button>
+        </Link>
       </ButtonGroup>
     </div>
   );
